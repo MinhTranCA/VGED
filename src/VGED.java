@@ -66,6 +66,7 @@ public class VGED {
 		}
 
 		vgedScore = distance / (double) sum;
+		vgedScore = 1 - vgedScore;
 	}
 
 	public double getVGEDScore() {
