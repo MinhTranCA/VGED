@@ -1,3 +1,36 @@
+Ref.SetCached#bool#
+2
+Ref return
+1
+1 2
+
+Ref.TestOptionalSet#
+19
+string Assert.AreEqual() String String String String Ref String UNKNOWN String NewLine Assert <a> Ref.execParser() String String <a> string int
+22
+1 2
+12 2
+18 14
+17 2
+19 2
+3 14
+10 17
+8 14
+5 13
+11 17
+6 13
+7 9
+13 14
+14 2
+15 14
+4 14
+13 18
+17 19
+9 14
+14 1
+16 14
+7 14
+
 Ref.Sync#int#
 4
 hieu trung hieu 1992

@@ -2,7 +2,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Graph {
-	private final int numberOfPathMaximum = 3;
+	private final static String CLASS_NAME = "CLASS_NAME";
+	private final int numberOfPathMaximum = 2;
 
 	private int nNode;
 	private int nEdge;
@@ -80,15 +81,25 @@ public class Graph {
 		}
 	}
 
+	private String optimizeValueNode(String value, String classname) {
+		String[] partitions = value.split("\\.");
+		if (classname.equals(""))
+			return partitions[0];
+		else
+			return (!(partitions[partitions.length - 1].equals(classname)))? partitions[partitions.length - 1] : Graph.CLASS_NAME;
+	}
+
 	public boolean parseGraphFromData(String data){
 		String[] partitions = data.split("\\s+");
 
 		if (partitions.length == 1)
 			return false;
 
+		String className = optimizeValueNode(partitions[0], "");
+
 		nNode = Integer.parseInt(partitions[1]);
 		for (int i = 1; i <= nNode; ++i) {
-			Node tmp = new Node(i, partitions[i + 1]);
+			Node tmp = new Node(i, optimizeValueNode(partitions[i + 1], className));
 			indexNodeMap.put(i, tmp);
 			nodes.add(tmp);
 		}

@@ -1,3 +1,36 @@
+SMT.CanAmend#
+2
+return SMT
+1
+2 1
+
+SMT.TestOptionalSet#
+19
+string Assert.AreEqual() String String String String SMT String UNKNOWN String NewLine Assert <a> SMT.execParser() String String <a> string int
+22
+18 14
+17 19
+17 2
+3 14
+10 17
+14 1
+8 14
+5 13
+7 14
+1 2
+12 2
+6 13
+11 17
+13 14
+14 2
+15 14
+4 14
+19 2
+7 9
+13 18
+16 14
+9 14
+
 Ref.Sync#int#
 4
 hieu trung hieu 1992
